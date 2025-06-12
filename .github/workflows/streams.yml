@@ -44,7 +44,7 @@ jobs:
             python3 twitch.py extacytvgreeks > ../../streams/EXTACY_GREEKS.m3u8
             python3 twitch.py failarmy > ../../streams/FAILARMY.m3u8
             python3 twitch.py farostv1959 > ../../streams/FAROS_TV_EKKLISIA.m3u8
-            python3 twitch.py orestidatv > ../../streams/FLASH_TV.m3u8
+            python3 twitch.py flashtvofficial08 > ../../streams/FLASH_TV.m3u8
             python3 twitch.py hotbeatstv > ../../streams/HOTBEAST_TV.m3u8
             python3 twitch.py iviewtvgr > ../../streams/IVIEW_TV.m3u8
             python3 twitch.py konitsaplustv > ../../streams/KONITSA_PLUS.m3u8
