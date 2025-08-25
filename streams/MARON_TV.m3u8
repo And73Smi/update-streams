@@ -1,3 +1,3 @@
-An error occurred while retrieving the access token for maron_tv: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-Failed to fetch stream URL for maron_tv: 403 - Forbidden
-No stream available for maron_tv. Moving to the next channel...
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=3095512,RESOLUTION=1280x720,CODECS="avc1.42C01F,mp4a.40.2",VIDEO="chunked",FRAME-RATE=50.000
+https://use23.playlist.ttvnw.net/v1/playlist/CrEE3HOuuNKz2cpVGiZ2rMFUif4_0T9epoUFbdB-ATV8l-6SXYLm2Y6rt2P0o2-dGJGBD4j-LZzAVTyv5oiaDpWwmncIwNcBltmaL0IEdz8EBoXILDhrE1uvfp4kD6arFyWaSFmpTdfb38sprJJK39-aRdEf2LHKv5CGVjwZskmdwFFSt0xLneWrsT18DRINrIb9sQJBXdmpTxAZI-HW6yUSTpM14WpizmNMI9OPjaQzfGODG9-hYgjZDJSd9-161vogq1YhH4KFkfiOCYUEVZzFEElwC5nB-7Dee6AotHcA6rwP-0hN6WLnwHir62nIPARmB8NOrv7NCavOn5Pz1TLXSs3A9F1cRPK7UgX90breQaWm7bGQ8lwEusHdV9lW2K9acLtjnECMXhYevdjIxZBXHNepCd2CcHfSs4SvP5_n_4gzoVC-8fEisDzreETKW1fgiCpnvhU-Lzbl2HUg4MGcyViT3MId5J7WS_Y2JqevAAF-lzcwvmgwD35PCPUdQ9QVOOih71l0ST4lLxjlYaXXAXN5oywtQsVjlrmRmscZj-Akp2o2mPJ2DXIWvOwcnm7gq9e6Npwmiv08qggX6RaOwnHCpLZVjP3yPZdXrHuzEPUInHgCpFTvhDleyOzKkaGWRRMoXWnDFMS5wlg4NnWFNkA_Eg3NKv9sg6fvGg57y1wXRLSg7R7-tfssWZ922SQvB5CQNQfHt4AnOl4geTKU8j-AJeLIWQUZlmpWdGJS4qRmGgwr_PPaxkk1m9cpZ3EgASoJdXMtZWFzdC0yMIgN.m3u8
