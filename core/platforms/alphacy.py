@@ -47,7 +47,7 @@ def create_m3u8(output_file, stream_url):
 
 if __name__ == "__main__":
     site_url = "https://aliez.tv/live/uab2p85ge9b1h98355dc/"
-    output_file = "test.m3u8"
+    output_file = "alphacy.m3u8"
 
     stream_url = fetch_m3u8_from_site(site_url)
     if stream_url:
