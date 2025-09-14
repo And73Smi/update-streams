@@ -8,6 +8,7 @@ def fetch_m3u8_from_site(url):
     Handles query strings (?...) and protocol-relative URLs (//...).
     """
     try:
+        url = f'https://www.alphacyprus.com.cy/index.php/live'
         response = requests.get(url, timeout=10)
         response.raise_for_status()
         html = response.text
