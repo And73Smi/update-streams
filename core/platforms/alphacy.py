@@ -38,8 +38,9 @@ def create_m3u8(output_file, stream_url):
     """
     Writes a new .m3u8 file with the given stream URL.
     """
-    content = f"""#EXTM3U"
-{stream_url}
+    content = f"""#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=3134643,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.42c01f,mp4a.40.2"
 """
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(content)
