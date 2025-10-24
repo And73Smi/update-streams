@@ -1,9 +1,2 @@
-Request failed with status code 504: <html>
-<head><title>504 Gateway Time-out</title></head>
-<body>
-<center><h1>504 Gateway Time-out</h1></center>
-</body>
-</html>
-
-Failed to fetch stream URL for lepantotv3: 403 - Forbidden
+Stream not found for lepantotv3. Skipping...
 No stream available for lepantotv3. Moving to the next channel...
