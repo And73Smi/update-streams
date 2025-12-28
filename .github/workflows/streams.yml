@@ -31,9 +31,9 @@ jobs:
             python3 twitch.py failarmy > ../../streams/FAILARMY.m3u8
             python3 twitch.py farostv1959 > ../../streams/FAROS_TV_EKKLISIA.m3u8
             python3 twitch.py hotbeatstv > ../../streams/HOTBEAST_TV.m3u8
-            python3 twitch.py orthodoxiaradio > ../../streams/ORTHODOXIA TV
+            python3 twitch.py orthodoxiaradio > ../../streams/ORTHODOXIA_TV.m3u
             python3 twitch.py pakoestream > ../../streams/PAKOE_TV.m3u8
-            python3 twitch.py radiomakedonia > ../../streams/RADIO_MAKEDONIA
+            python3 twitch.py radiomakedonia > ../../streams/RADIO_MAKEDONIA.m3u
             python3 twitch.py xtvision > ../../streams/XTVISION.m3u8
             python3 twitch.py xtvision2 > ../../streams/XTVISION_2.m3u8
             python3 dailymotion.py x8p5u0u > ../../streams/CGTN_Europe.m3u8
