@@ -1,38 +1,33 @@
-#!/usr/bin/python3
 import requests
-import sys
 import logging
 
-def get_channel8_streams(video_id: str):
-    """
-    Retrieves channel8 streams based on the video ID.
+def get_metadata(video_id):
+    # Σωστό URL με f-string και χωρίς διπλά slashes
+    url = f'www.channel8.gr{video_id}'
+    
+    # Προσθήκη User-Agent για να φαίνεται σαν κανονικός περιηγητής
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
 
-    Args:
-        video_id (str): The ID of the channel8 video.
-
-    Returns:
-        None
-    """
     try:
-        url = f'https://www.channel8.gr//player/metadata/video/{video_id}'
-        response = requests.get(url).json()
-        if 'qualities' not in response or not response['qualities']:
-            print("No streams available for this video.")
-        else:
-            stream_url = response['qualities']['auto'][0]['url']
-            m3u = requests.get(stream_url).text
-            print(m3u)
-    except requests.exceptions.RequestException as e:
-        logging.error(f"Request error: {e}")
-        sys.exit(1)
-    except KeyError as e:
-        logging.error(f"Key error: {e}")
-        sys.exit(1)
+        response = requests.get(url, headers=headers, timeout=10)
         
-if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print("Usage: python channel8.py stream")
-        sys.exit(1)
+        # Έλεγχος αν η απάντηση είναι επιτυχής (HTTP 200)
+        response.raise_for_status()
+        
+        # Έλεγχος αν το περιεχόμενο είναι όντως JSON
+        return response.json()
+        
+    except requests.exceptions.HTTPError as e:
+        logging.error(f"HTTP Error: {e}")
+    except requests.exceptions.JSONDecodeError:
+        logging.error(f"Σφάλμα: Ο διακομιστής δεν επέστρεψε JSON. Απάντηση: {response.text[:100]}")
+    except Exception as e:
+        logging.error(f"Request error: {e}")
+    
+    return None
+
     else:
         video_id = sys.argv[1]
         get_channel8_streams(video_id)
