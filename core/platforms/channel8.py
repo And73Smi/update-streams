@@ -14,7 +14,7 @@ def get_channel8_streams(video_id: str):
         None
     """
     try:
-        url = f'https://https://www.channel8.gr//player/metadata/video/{video_id}'
+        url = https://www.channel8.gr//player/metadata/video/{video_id}'
         response = requests.get(url).json()
         if 'qualities' not in response or not response['qualities']:
             print("No streams available for this video.")
