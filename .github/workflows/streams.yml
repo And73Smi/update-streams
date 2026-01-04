@@ -39,7 +39,6 @@ jobs:
             python3 twitch.py xtvision2 > ../../streams/XTVISION_2.m3u8
             python3 dailymotion.py x8p5u0u > ../../streams/CGTN_Europe.m3u8
             python3 dailymotion.py k5Hfx6eeaTjBE5zRXcn > ../../streams/STAR_KENTRIKHS_ELLADAS.m3u8
-            python3 channel8.py channel8.gr > ../../streams/CHANNEL18.M3U8
       - name: git add
         run: |
           git add -A
