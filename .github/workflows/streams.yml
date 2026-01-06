@@ -25,16 +25,23 @@ jobs:
         run: |
             pwd
             cd ./core/platforms/
+            python3 twitch.py aktinaradio > ../../streams/AKTINA_RADIO.m3u8
             python3 twitch.py alithiavideo > ../../streams/ALITHIA_TV.m3u8
+            python3 twitch.py radiotvanemosgr > ../../streams/ANEMOS_RADIO.m3u8
             python3 twitch.py astratv2021 > ../../streams/ASTRA_TV.m3u8
             python3 twitch.py astratv2019 > ../../streams/ASTRA_TV_2.m3u8
+            python3 twitch.py diavata_tv > ../../streams/DIABATA_TV.m3u8
+            python3 twitch.py dtpylias > ../../streams/DTP.m3u8
             python3 twitch.py failarmy > ../../streams/FAILARMY.m3u8
             python3 twitch.py farostv1959 > ../../streams/FAROS_TV_EKKLISIA.m3u8
+            python3 twitch.py younowflashtv > ../../streams/FLASH_TV.m3u8
             python3 twitch.py hotbeatstv > ../../streams/HOTBEAST_TV.m3u8
+            python3 twitch.py konitsaplustv > ../../streams/KONITSA_TV.m3u8
             python3 twitch.py orthodoxiaradio > ../../streams/ORTHODOXIA_TV.m3u8
-            python3 twitch.py viewtvgr  > ../../streams/IVIEW_TV.3U8
+            python3 twitch.py viewtvgr  > ../../streams/IVIEW_TV.m3u8
             python3 twitch.py pakoestream > ../../streams/PAKOE_TV.m3u8
-            python3 twitch.py radiomakedonia > ../../streams/RADIO_MAKEDONIA.m3u8
+            python3 twitch.py zefstv1 > ../../streams/PLUTON_TV.m3u8
+            python3 twitch.py radiomakedonia > ../../streams/MAKEDONIA_RADIO.m3u8
             python3 twitch.py xtvision > ../../streams/XTVISION.m3u8
             python3 twitch.py xtvision2 > ../../streams/XTVISION_2.m3u8
             python3 dailymotion.py x8p5u0u > ../../streams/CGTN_Europe.m3u8
